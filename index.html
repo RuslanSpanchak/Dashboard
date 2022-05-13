@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dashboard</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js" integrity="sha512-Lii3WMtgA0C0qmmkdCpsG0Gjr6M0ajRyQRQSbTF6BsrVh/nhZdHpVZ76iMIPvQwz1eoXC3DmAg9K51qT5/dEVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+
+	<div class="wrap">
+
+		<div class="left_side_static"></div>
+		
+		<div class="left_side">
+			
+			<div class="left_side_container">
+				
+				<div class="logo_place">
+
+					<img src="./img/Logo.png" class="icon_logo">
+
+				</div>
+
+				<div class="page_choose">
+				
+				<div class="page_choose_item page_choose_item_active" id="Dashboard">
+					
+					<img src="./img/Vector.png" id="icon_house_disactive" class="icon_page_choose">
+					<img src="./img/house.png" width="25px" height="25px" id="icon_house" class="icon_page_choose">
+					<div class="page_choose_item_title page_choose_item_title_white" id="page_choose_title_1">Dashboard</div>
+
+				</div>
+
+				<div class="page_choose_item" id="Wallet">
+					
+					<img src="./img/Vector (1).png" id="icon_walet_disactive" class="icon_page_choose">
+					<img src="./img/wallet.png" width="25px" height="25px" id="icon_walet" class="icon_page_choose">
+					<div class="page_choose_item_title" id="page_choose_title_2">My Wallet</div>
+					
+				</div>
+
+				<div class="page_choose_item" id="Payment">
+					
+					<img src="./img/Vector (2).png" id="icon_card_disactive" class="icon_page_choose">
+					<img src="./img/credit-card.png" width="25px" height="25px" id="icon_card" class="icon_page_choose">
+					<div class="page_choose_item_title" id="page_choose_title_3">Payment</div>
+					
+				</div>
+
+				<div class="page_choose_item" id="Invoice">
+					
+					<img src="./img/Vector (3).png" id="icon_bill_disactive" class="icon_page_choose">
+					<img src="./img/bill.png" width="25px" height="25px" id="icon_bill" class="icon_page_choose">
+					<div class="page_choose_item_title" id="page_choose_title_4">Invoice</div>
+					
+				</div>
+
+				<div class="page_choose_item" id="Setting">
+					
+					<img src="./img/Vector (4).png" id="icon_settings_disactive" class="icon_page_choose">
+					<img src="./img/settings.png" width="25px" height="25px" id="icon_settings" class="icon_page_choose">
+					<div class="page_choose_item_title" id="page_choose_title_5">Setting</div>
+					
+				</div>
+
+				<div class="page_choose_item" id="Transactions">
+					
+					<img src="./img/transaction (1).png" id="icon_transaction_disactive" width="24px" height="24px" class="icon_page_choose">
+					<img src="./img/transaction (2).png" width="25px" height="25px" id="icon_transaction" class="icon_page_choose">
+					<div class="page_choose_item_title" id="page_choose_title_6">Transactions</div>
+					
+				</div>
+
+				</div>
+
+				<div class="payment_admin">Payment Admin Dashboard</div>
+				<div class="made_by">© 2021-2022 All rights reserved.</div>
+				<div class="made_by">Made by ❤️  Ruslan Spanchak</div>
+
+			</div>
+
+		</div>
+
+		<div class="right_side">
+			
+			<div class="right_side_container">
+				
+				<header class="right_side_header">
+					
+					<img src="./img/window-of-four-rounded-squares.png" width="30px" height="30px">
+
+					<div class="right_side_title">Dashboard</div>
+
+					<div class="header_input_place">
+						
+						<input type="text" name="" class="input" placeholder="Search Here...">
+						<img src="./img/Vector (5).png" width="20px" height="20px" class="icon_search">
+
+					</div>
+
+					<div class="bells_message_place">
+
+						<img src="./img/bell.png" width="30px" height="30px" class="cursor">
+						<img src="./img/envelope.png" width="30px" height="30px" class="cursor">
+
+					</div>
+
+					<div class="user_place">
+						
+						<img src="./img/Rectangle 14.png">
+
+						<div class="user_info">
+							
+							<div class="user_name">Hi Shamim</div>
+							<div class="user_gmail">engshamim@gmail.com</div>
+
+						</div>
+
+					</div>
+
+				</header>
+
+				<div class="squares">
+					
+					<div class="squares_item">
+						
+						<div class="squares_item_container">
+							
+							<div class="squares_item_icon_place">	
+
+								<img src="./img/invoice 1.png">
+
+							</div>
+
+							<div class="invoices_place">
+
+								<div class="invoices_number">32,568</div>
+								<div class="invoices_place_text">Total Invoices</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="squares_item squares_item_blue">
+						
+						<div class="squares_item_container">
+							
+							<div class="squares_item_icon_place squares_item_icon_place_blue">	
+
+								<img src="./img/check 1.png">
+
+							</div>
+
+							<div class="invoices_place">
+
+								<div class="invoices_number">8,558</div>
+								<div class="invoices_place_text">Paid Invoices</div>
+
+							</div>
+
+						</div>
+						
+					</div>
+
+					<div class="squares_item squares_item_yellow">
+						
+						<div class="squares_item_container">
+							
+							<div class="squares_item_icon_place squares_item_icon_place_yellow">	
+
+								<img src="./img/close 1.png">
+
+							</div>
+
+							<div class="invoices_place">
+
+								<div class="invoices_number">2,568</div>
+								<div class="invoices_place_text">Unpaid Invoices</div>
+
+							</div>
+
+						</div>
+						
+					</div>
+
+					<div class="squares_item squares_item_red">
+						
+						<div class="squares_item_container">
+							
+							<div class="squares_item_icon_place squares_item_icon_place_red">	
+
+								<img src="./img/invoice (1) 1.png">
+
+							</div>
+
+							<div class="invoices_place">
+
+								<div class="invoices_number">668</div>
+								<div class="invoices_place_text">Total Invoices Sent</div>
+
+							</div>
+
+						</div>
+						
+					</div>
+
+				</div>
+
+				<div class="sections">
+				
+					<div class="transactions_place">
+					
+						<div class="transactions_place_container">
+							
+							<div class="transactions_place_title">Latest Transactions</div>
+
+							<div class="transactions_choose" id="transactions_choose_show_1">
+								
+								<div class="transactions_choose_item">
+									
+									<div class="transactions_choose_item_square"></div>
+
+									<div class="transactions_name_place">
+										
+										<div class="transactions_id">#KLA-237-393-950</div>
+										<div class="transactions_name">CodeAstrology.com</div>
+
+									</div>
+
+									<div class="transactions_choose_ammount">
+										
+										<div class="transactions_choose_ammount_square">	
+											<img src="./img/invoice 2.png">
+
+										</div>
+
+										<div class="ammount_text">
+												
+											<div class="ammount_title">Amount</div>
+											<div class="ammount_price">$4,67,859</div>
+
+										</div>
+
+									</div>
+
+									<div class="ammount_title ammount_title_time">5 min ago</div>
+
+									<img src="./img/printer.png" width="35px" height="35px" class="icon_printer cursor">
+									<img src="./img/more.png" width="35px" height="35px" class="icon_dotted cursor">
+
+								</div>
+
+								<div class="transactions_choose_item">
+									
+									<div class="transactions_choose_item_square transactions_choose_item_square_yellow"></div>
+
+									<div class="transactions_name_place">
+										
+										<div class="transactions_id">#KLA-237-393-950</div>
+										<div class="transactions_name">HSJ Express.com</div>
+
+									</div>
+
+									<div class="transactions_choose_ammount">
+										
+										<div class="transactions_choose_ammount_square">	
+											<img src="./img/invoice 2 (1).png">
+
+										</div>
+
+										<div class="ammount_text">
+												
+											<div class="ammount_title">Amount</div>
+											<div class="ammount_price">$89,859</div>
+
+										</div>
+
+									</div>
+
+									<div class="ammount_title ammount_title_time">5 min ago</div>
+
+									<img src="./img/printer.png" width="35px" height="35px" class="icon_printer cursor">
+									<img src="./img/more.png" width="35px" height="35px" class="icon_dotted cursor">
+
+								</div>
+
+								<div class="transactions_choose_item">
+									
+									<div class="transactions_choose_item_square transactions_choose_item_square_green"></div>
+
+									<div class="transactions_name_place">
+										
+										<div class="transactions_id">#KLA-237-393-950</div>
+										<div class="transactions_name">Inventiveshamim.Inc</div>
+
+									</div>
+
+									<div class="transactions_choose_ammount">
+										
+										<div class="transactions_choose_ammount_square">	
+											<img src="./img/invoice 2 (3).png">
+
+										</div>
+
+										<div class="ammount_text">
+												
+											<div class="ammount_title">Amount</div>
+											<div class="ammount_price">$3,43,67,859</div>
+
+										</div>
+
+									</div>
+
+									<div class="ammount_title ammount_title_time">5 min ago</div>
+
+									<img src="./img/printer.png" width="35px" height="35px" class="icon_printer cursor">
+									<img src="./img/more.png" width="35px" height="35px" class="icon_dotted cursor">
+
+								</div>
+
+								<div class="transactions_choose_item">
+									
+									<div class="transactions_choose_item_square transactions_choose_item_square_red"></div>
+
+									<div class="transactions_name_place">
+										
+										<div class="transactions_id">#KLA-237-393-950</div>
+										<div class="transactions_name">Avadaforlife.Inc</div>
+
+									</div>
+
+									<div class="transactions_choose_ammount">
+										
+										<div class="transactions_choose_ammount_square">	
+											<img src="./img/invoice 2 (2).png">
+
+										</div>
+
+										<div class="ammount_text">
+												
+											<div class="ammount_title">Amount</div>
+											<div class="ammount_price">$2,07,859</div>
+
+										</div>
+
+									</div>
+
+									<div class="ammount_title ammount_title_time">5 min ago</div>
+
+									<img src="./img/printer.png" width="35px" height="35px" class="icon_printer cursor">
+									<img src="./img/more.png" width="35px" height="35px" class="icon_dotted cursor">
+
+								</div>
+
+							</div>
+
+							<div class="transactions_choose" id="transactions_choose_show_2">
+								
+								<div class="transactions_choose_item">
+									
+									<div class="transactions_choose_item_square transactions_choose_item_square_red"></div>
+
+									<div class="transactions_name_place">
+										
+										<div class="transactions_id">#KLA-237-393-950</div>
+										<div class="transactions_name">Avadaforlife.Inc</div>
+
+									</div>
+
+									<div class="transactions_choose_ammount">
+										
+										<div class="transactions_choose_ammount_square">	
+											<img src="./img/invoice 2 (2).png">
+
+										</div>
+
+										<div class="ammount_text">
+												
+											<div class="ammount_title">Amount</div>
+											<div class="ammount_price">$2,07,859</div>
+
+										</div>
+
+									</div>
+
+									<div class="ammount_title ammount_title_time">5 min ago</div>
+
+									<img src="./img/printer.png" width="35px" height="35px" class="icon_printer cursor">
+									<img src="./img/more.png" width="35px" height="35px" class="icon_dotted cursor">
+
+								</div>
+
+								<div class="transactions_choose_item">
+									
+									<div class="transactions_choose_item_square"></div>
+
+									<div class="transactions_name_place">
+										
+										<div class="transactions_id">#KLA-237-393-950</div>
+										<div class="transactions_name">CodeAstrology.com</div>
+
+									</div>
+
+									<div class="transactions_choose_ammount">
+										
+										<div class="transactions_choose_ammount_square">	
+											<img src="./img/invoice 2.png">
+
+										</div>
+
+										<div class="ammount_text">
+												
+											<div class="ammount_title">Amount</div>
+											<div class="ammount_price">$4,67,859</div>
+
+										</div>
+
+									</div>
+
+									<div class="ammount_title ammount_title_time">5 min ago</div>
+
+									<img src="./img/printer.png" width="35px" height="35px" class="icon_printer cursor">
+									<img src="./img/more.png" width="35px" height="35px" class="icon_dotted cursor">
+
+								</div>
+
+								<div class="transactions_choose_item">
+									
+									<div class="transactions_choose_item_square transactions_choose_item_square_yellow"></div>
+
+									<div class="transactions_name_place">
+										
+										<div class="transactions_id">#KLA-237-393-950</div>
+										<div class="transactions_name">HSJ Express.com</div>
+
+									</div>
+
+									<div class="transactions_choose_ammount">
+										
+										<div class="transactions_choose_ammount_square">	
+											<img src="./img/invoice 2 (1).png">
+
+										</div>
+
+										<div class="ammount_text">
+												
+											<div class="ammount_title">Amount</div>
+											<div class="ammount_price">$89,859</div>
+
+										</div>
+
+									</div>
+
+									<div class="ammount_title ammount_title_time">5 min ago</div>
+
+									<img src="./img/printer.png" width="35px" height="35px" class="icon_printer cursor">
+									<img src="./img/more.png" width="35px" height="35px" class="icon_dotted cursor">
+
+								</div>
+
+								<div class="transactions_choose_item">
+									
+									<div class="transactions_choose_item_square transactions_choose_item_square_green"></div>
+
+									<div class="transactions_name_place">
+										
+										<div class="transactions_id">#KLA-237-393-950</div>
+										<div class="transactions_name">Inventiveshamim.Inc</div>
+
+									</div>
+
+									<div class="transactions_choose_ammount">
+										
+										<div class="transactions_choose_ammount_square">	
+											<img src="./img/invoice 2 (3).png">
+
+										</div>
+
+										<div class="ammount_text">
+												
+											<div class="ammount_title">Amount</div>
+											<div class="ammount_price">$3,43,67,859</div>
+
+										</div>
+
+									</div>
+
+									<div class="ammount_title ammount_title_time">5 min ago</div>
+
+									<img src="./img/printer.png" width="35px" height="35px" class="icon_printer cursor">
+									<img src="./img/more.png" width="35px" height="35px" class="icon_dotted cursor">
+
+								</div>
+
+							</div>
+
+							<div class="transactions_choose" id="transactions_choose_show_3">
+								
+								<div class="transactions_choose_item">
+									
+									<div class="transactions_choose_item_square transactions_choose_item_square_green"></div>
+
+									<div class="transactions_name_place">
+										
+										<div class="transactions_id">#KLA-237-393-950</div>
+										<div class="transactions_name">Inventiveshamim.Inc</div>
+
+									</div>
+
+									<div class="transactions_choose_ammount">
+										
+										<div class="transactions_choose_ammount_square">	
+											<img src="./img/invoice 2 (3).png">
+
+										</div>
+
+										<div class="ammount_text">
+												
+											<div class="ammount_title">Amount</div>
+											<div class="ammount_price">$3,43,67,859</div>
+
+										</div>
+
+									</div>
+
+									<div class="ammount_title ammount_title_time">5 min ago</div>
+
+									<img src="./img/printer.png" width="35px" height="35px" class="icon_printer cursor">
+									<img src="./img/more.png" width="35px" height="35px" class="icon_dotted cursor">
+
+								</div>
+
+								<div class="transactions_choose_item">
+									
+									<div class="transactions_choose_item_square transactions_choose_item_square_red"></div>
+
+									<div class="transactions_name_place">
+										
+										<div class="transactions_id">#KLA-237-393-950</div>
+										<div class="transactions_name">Avadaforlife.Inc</div>
+
+									</div>
+
+									<div class="transactions_choose_ammount">
+										
+										<div class="transactions_choose_ammount_square">	
+											<img src="./img/invoice 2 (2).png">
+
+										</div>
+
+										<div class="ammount_text">
+												
+											<div class="ammount_title">Amount</div>
+											<div class="ammount_price">$2,07,859</div>
+
+										</div>
+
+									</div>
+
+									<div class="ammount_title ammount_title_time">5 min ago</div>
+
+									<img src="./img/printer.png" width="35px" height="35px" class="icon_printer cursor">
+									<img src="./img/more.png" width="35px" height="35px" class="icon_dotted cursor">
+
+								</div>
+
+								<div class="transactions_choose_item">
+									
+									<div class="transactions_choose_item_square"></div>
+
+									<div class="transactions_name_place">
+										
+										<div class="transactions_id">#KLA-237-393-950</div>
+										<div class="transactions_name">CodeAstrology.com</div>
+
+									</div>
+
+									<div class="transactions_choose_ammount">
+										
+										<div class="transactions_choose_ammount_square">	
+											<img src="./img/invoice 2.png">
+
+										</div>
+
+										<div class="ammount_text">
+												
+											<div class="ammount_title">Amount</div>
+											<div class="ammount_price">$4,67,859</div>
+
+										</div>
+
+									</div>
+
+									<div class="ammount_title ammount_title_time">5 min ago</div>
+
+									<img src="./img/printer.png" width="35px" height="35px" class="icon_printer cursor">
+									<img src="./img/more.png" width="35px" height="35px" class="icon_dotted cursor">
+
+								</div>
+
+								<div class="transactions_choose_item">
+									
+									<div class="transactions_choose_item_square transactions_choose_item_square_yellow"></div>
+
+									<div class="transactions_name_place">
+										
+										<div class="transactions_id">#KLA-237-393-950</div>
+										<div class="transactions_name">HSJ Express.com</div>
+
+									</div>
+
+									<div class="transactions_choose_ammount">
+										
+										<div class="transactions_choose_ammount_square">	
+											<img src="./img/invoice 2 (1).png">
+
+										</div>
+
+										<div class="ammount_text">
+												
+											<div class="ammount_title">Amount</div>
+											<div class="ammount_price">$89,859</div>
+
+										</div>
+
+									</div>
+
+									<div class="ammount_title ammount_title_time">5 min ago</div>
+
+									<img src="./img/printer.png" width="35px" height="35px" class="icon_printer cursor">
+									<img src="./img/more.png" width="35px" height="35px" class="icon_dotted cursor">
+
+								</div>
+
+							</div>
+
+							<div class="transactions_place_footer">
+								
+								<div class="transactions_place_footer_text">Showing <span class="transactions_place_footer_text_span">1-4</span> from <span class="transactions_place_footer_text_span">60</span> Data</div>
+
+								<div class="transactions_place_choose">
+									
+									<div class="transactions_place_choose_item">
+										
+										<img src="./img/Vector (9).png">
+
+									</div>
+
+									<div class="transactions_place_choose_item transactions_place_choose_item_active" id="transactions_choose_1">
+										
+										1
+										
+									</div>
+
+									<div class="transactions_place_choose_item" id="transactions_choose_2">
+										
+										2
+										
+									</div>
+
+									<div class="transactions_place_choose_item" id="transactions_choose_3">
+										
+										3
+										
+									</div>
+
+									<div class="transactions_place_choose_item">
+										
+										<img src="./img/Vector (10).png">
+										
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="statistics_place">
+					
+						<div class="statistics_place_container">
+
+							<div class="statistics_place_title">Statistics</div>
+
+							<div class="canvas_place_bar">
+
+								<canvas id="myChart" width="400" height="400"></canvas>
+
+							</div>
+
+							<div class="canvas_colors">
+								
+								<div class="canvas_colors_row">
+
+									<div class="canvas_colors_item">
+										
+										<div class="canvas_colors_item_circule"></div>
+										<div class="canvas_colors_item_color">Green</div>
+
+									</div>
+
+									<div class="canvas_colors_item">
+										
+										<div class="canvas_colors_item_circule canvas_colors_item_circule_blue"></div>
+										<div class="canvas_colors_item_color">Blue</div>
+
+									</div>
+
+								</div>
+
+								<div class="canvas_colors_row">
+
+									<div class="canvas_colors_item">
+										
+										<div class="canvas_colors_item_circule canvas_colors_item_circule_yellow"></div>
+										<div class="canvas_colors_item_color">Yellow</div>
+
+									</div>
+
+									<div class="canvas_colors_item">
+										
+										<div class="canvas_colors_item_circule canvas_colors_item_circule_red"></div>
+										<div class="canvas_colors_item_color">Red</div>
+
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="sections">
+				
+					<div class="card_transactions_place">
+					
+						<div class="sections_container sections_container_jk">
+							
+							<div class="card" id="card">
+
+								<div class="card_front">
+								
+								<div class="sections_container">
+
+									<div class="statistics_place_title statistics_place_title_card">Balance</div>
+
+									<div class="sections_text_bold_card">$ 4,929</div>
+
+									<div class="pin_code">
+										
+										<div class="dotted"></div>
+										<div class="dotted"></div>
+										<div class="dotted"></div>
+										<div class="dotted dotted_margin"></div>
+
+										<div class="dotted"></div>
+										<div class="dotted"></div>
+										<div class="dotted"></div>
+										<div class="dotted dotted_margin"></div>
+
+										<div class="dotted"></div>
+										<div class="dotted"></div>
+										<div class="dotted"></div>
+										<div class="dotted dotted_margin"></div>
+
+										<div class="last_namber">3456</div>
+
+									</div>
+
+									<div class="card_footer">
+										
+										<div class="card_footer_item">
+											
+											<div class="user_name_card">Valid Thru</div>
+											<div class="card_date">03/23</div>
+
+										</div>
+
+										<div class="card_footer_item">
+											
+											<div class="user_name_card">Name</div>
+											<div class="card_date">Jhon Doe</div>
+											
+										</div>
+
+										<div class="card_circule_place">
+
+											<div class="card_circule card_circule_left_left"></div>
+											<div class="card_circule card_circule_left_right"></div>
+
+										</div>
+
+									</div>
+
+								</div>
+
+								</div>
+
+								<div class="card_back">
+
+									<div class="card_back_figure"></div>
+									
+									<div class="sections_container">
+
+										<div class="card_cvv">
+											
+											<div class="card_cvv_figure"></div>
+											<div class="cvv_numbers">123</div>
+
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="transactions">
+
+								<div class="sections_container sections_container_flex">
+								
+									<div class="transactions_left">
+
+										<div class="sections_text_transactions">Transactions</div>
+										<div class="sections_text_bold_transactions">5,793</div>
+
+									</div>
+
+									<div class="canvas_place_bar_transactions">
+
+										<canvas id="myChart_three" width="400" height="400"></canvas>
+
+									</div>
+
+								</div>
+
+							</div>
+								
+						</div>
+
+					</div>
+
+					<div class="balance_place">
+					
+						<div class="sections_container">
+							
+							<div class="statistics_place_title">Balance Details</div>
+
+							<div class="sections_text">Total Balance</div>
+							<div class="sections_text_bold">$221,478</div>
+
+							<div class="balance_place_squares">
+								
+								<div class="balance_place_squares_row">
+
+									<div class="balance_place_squares_item balance_place_squares_item_active" id="balance_place_squares_item_1">
+									
+										<div class="sections_text sections_text_square sections_text_square_active" id="sections_text_square_1">Last Month</div>
+										<div class="square_price square_price_active" id="square_price_1">$ 14,849</div>
+
+									</div>
+
+									<div class="balance_place_squares_item"  id="balance_place_squares_item_2">
+									
+										<div class="sections_text sections_text_square" id="sections_text_square_2">Expenses</div>
+										<div class="square_price" id="square_price_2">$ 14,849</div>
+									
+									</div>
+
+								</div>
+
+									<div class="balance_place_squares_row">
+
+									<div class="balance_place_squares_item"  id="balance_place_squares_item_3">
+									
+										<div class="sections_text sections_text_square" id="sections_text_square_3">Taxes</div>
+										<div class="square_price" id="square_price_3">$255.25</div>
+									
+									</div>
+
+									<div class="balance_place_squares_item"  id="balance_place_squares_item_4">
+									
+										<div class="sections_text sections_text_square" id="sections_text_square_4">Debt</div>
+										<div class="square_price" id="square_price_4">$365,478</div>
+									
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+					
+					</div>
+
+					<div class="activity_place">
+					
+						<div class="sections_container">
+							
+							<div class="sections_text">Activity</div>
+							<div class="sections_text_bold">$ 48,284</div>
+
+								<div class="canvas_place_bar canvas_place_bar_place">
+
+									<canvas id="myChart_two" width="400" height="400"></canvas>
+
+									<div class="canvas_place_bar_place_right">
+										
+										<div class="canvas_place_bar_place_right_item">
+											
+											<div class="canvas_place_bar_place_right_item_figure"></div>
+											<div class="canvas_place_bar_place_right_item_text">Green</div>
+
+										</div>
+
+										<div class="canvas_place_bar_place_right_item">
+											
+											<div class="canvas_place_bar_place_right_item_figure canvas_place_bar_place_right_item_figure_red"></div>
+											<div class="canvas_place_bar_place_right_item_text">Red</div>
+
+										</div>
+
+										<div class="canvas_place_bar_place_right_item">
+											
+											<div class="canvas_place_bar_place_right_item_figure canvas_place_bar_place_right_item_figure_blue"></div>
+											<div class="canvas_place_bar_place_right_item_text">Blue</div>
+
+										</div>
+
+									</div>
+
+								</div>
+
+						</div>
+					
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="vanilla-tilt.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
