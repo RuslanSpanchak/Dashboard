@@ -1,3 +1,8 @@
+
+$(".icon_user").hide(0)
+$(".user_name").html("Guest")
+$(".user_gmail").html("Зарегіструйтеся")
+
 $("#transactions_choose_show_2").hide(0)
 $("#transactions_choose_show_3").hide(0)
 $("#icon_walet").hide(0)
@@ -327,6 +332,182 @@ $("#card").click(function() {
 
 })
 
+$("#register_btn").click(function() {
+
+	$("#popup_register").css("opacity", "1")
+	$("#popup_register").css("visibility", "visible")
+	$(".popup_content").css("transform", "translate(0px, 0px) perspective(600px) rotateX(0deg)")
+	$(".popup_content").css("opacity", "1")
+
+})
+
+$("#mail_btn").click(function() {
+
+	$("#popup_mail").css("opacity", "1")
+	$("#popup_mail").css("visibility", "visible")
+	$(".popup_content").css("transform", "translate(0px, 0px) perspective(600px) rotateX(0deg)")
+	$(".popup_content").css("opacity", "1")
+
+})
+
+$("#close_popup").click(function() {
+
+	$("#popup_register").css("opacity", "0")
+	$("#popup_register").css("visibility", "hidden")
+	$(".popup_content").css("transform", "translate(0px, -100%) perspective(600px) rotateX(45deg)")
+	$(".popup_content").css("opacity", "0")
+
+})
+
+$("#close_popup_mail").click(function() {
+
+	$("#popup_mail").css("opacity", "0")
+	$("#popup_mail").css("visibility", "hidden")
+	$(".popup_content").css("transform", "translate(0px, -100%) perspective(600px) rotateX(45deg)")
+	$(".popup_content").css("opacity", "0")
+
+})
+
+let users = []
+
+$("#enter_btn").click(function() {
+
+	let login_info = user_login.value
+	let password_info = user_password.value
+
+	if (checkEmpty(login_info, password_info) && checkLen(login_info, password_info) && checkLow(password_info) && checkUpper(password_info) && checkNumber(password_info)) {
+
+		$("#popup_register").css("opacity", "0")
+		$("#popup_register").css("visibility", "hidden")
+		$(".popup_content").css("transform", "translate(0px, -100%) perspective(600px) rotateX(45deg)")
+		$(".popup_content").css("opacity", "0")
+
+		$(".icon_user").show(0)
+		$(".icon_guest").hide(0)
+
+		$(".user_name").html(login_info)
+		$(".user_gmail").html(login_info + "@gmail.com")
+
+	} else {
+
+		$(".register_error_place").css("display", "block")
+
+	}
+
+})
+
+function checkEmpty(login, password) {
+
+	if (login && password) {
+
+		return true
+
+	} else {
+
+		return false
+
+	}
+
+}
+
+function checkLen(login, password) {
+
+	if (login.length < 10 && password.length < 10) {
+
+		return true
+
+	} else {
+
+		return false
+
+	}
+
+}
+
+function checkLow(password) {
+
+	let countL = 0
+
+	for (let i = 0; i < password.length; i++) {
+
+		if (password[i] === password[i].toLowerCase()) {
+
+			countL++
+
+		}
+
+	}
+
+	if (countL === 0) {
+
+		return false
+
+	} else {
+
+		return true
+
+	}
+
+}
+
+function checkUpper(password) {
+
+	let countL = 0
+
+	for (let i = 0; i < password.length; i++) {
+
+		if (password[i] === password[i].toUpperCase()) {
+
+			countL++
+
+		}
+
+	}
+
+	if (countL === 0) {
+
+		return false
+
+	} else {
+
+		return true
+
+	}
+
+}
+
+function checkNumber(password) {
+
+	let count = 0
+
+	let number = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
+	for (let i = 0; i < password.length; i++) {
+
+		for (let j = 0; j < password.length; j++) {
+
+			if (password[i] === number[j]) {
+
+				count++
+
+			}
+
+		}
+
+	}
+
+	if (count === 0) {
+
+		return false;
+
+	} else {
+
+		return true;
+
+	}
+
+}
+
 const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, {
     type: 'bar',
@@ -396,7 +577,9 @@ const myChart_three = new Chart(cty, {
                 '#FF684D'
             ],
             fill: false,
-            tension: 0.5
+            tension: 0.5,
+            borderColor: '#FF684D',
+            borderWidth: 5
         }]
     },
     options: {
