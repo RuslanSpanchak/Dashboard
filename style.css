@@ -47,6 +47,13 @@
 }
 
 .logo_title {
+	font-size: 36px;
+	font-weight: 900;
+	font-family: monospace;
+	color: #0E6EFF;
+}
+
+.logo_title {
 	font-size: 41px;
 	font-family: monospace;
 	font-weight: 900;
@@ -191,7 +198,7 @@
 	display: flex;
 	justify-content: space-between;
 
-	margin-left: 42px;
+	margin-left: 0px;
 }
 
 .cursor {
@@ -316,6 +323,7 @@
 
 .sections {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 
 	margin-top: 35px;
@@ -929,4 +937,1761 @@
 	color: #72757A;
 
 	margin-top: 10px;
+}
+
+.balance_place_media {
+	display: none;
+}
+
+.logo_title {
+	display: none;
+}
+
+.burger_menu {
+	display: none;
+}
+
+.popup {
+	width: 100%;
+	height: 100%;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	background-color: rgba(0, 0, 0, 0.8);
+
+	opacity: 0;
+	visibility: hidden;
+
+	transition: .5s linear;
+}
+
+.popup_body {
+	min-height: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.popup_content {
+	max-width: 1000px;
+
+	background-color: #fff;
+
+	color: #000;
+
+	padding: 15px 30px 25px 30px;
+
+	position: relative;
+
+	transition: .5s linear;
+	transform: translate(0px, -100%) perspective(600px) rotateX(45deg);
+	opacity: 0;
+}
+
+.popup_close {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+
+	cursor: pointer;
+}
+
+.popup_title {
+	font-size: 40px;
+	font-family: monospace;
+}
+
+.register_error_place {
+	margin-top: 15px;
+
+	display: none;
+}
+
+.register_error {
+	font-size: 15px;
+	font-family: monospace;
+	color: red;
+
+	text-align: center;
+}
+
+.register_input {
+	line-height: 50px;
+
+	background-color: #999;
+	border-radius: 15px;
+
+	outline: none;
+	border: none;
+
+	font-size: 20px;
+
+	padding: 0px 10px;
+	margin: 25px 5px 15px 5px;
+}
+
+.register_btn {
+	width: 225px;
+	line-height: 50px;
+
+	background-color: skyblue;
+	border-radius: 15px;
+	box-shadow: 0px 5px 0px 0px cadetblue;
+
+	text-align: center;
+
+	font-size: 25px;
+	font-family: monospace;
+	color: #fff;
+
+	margin: 0px auto;
+
+	transition: .1s linear;
+	cursor: pointer;
+
+	position: relative;
+}
+
+.register_btn:hover {
+	background-color: cadetblue;
+
+	top: 3px;
+}
+
+.mail_yext_place {
+	display: flex;
+	align-items: center;
+
+	padding: 100px;
+}
+
+.mail_text {
+	font-size: 25px;
+	font-family: monospace;
+	color: #999;
+
+	margin-right: 15px;
+}
+
+@media (max-width: 2100px) {
+
+	.right_side {
+		height: 140vh;
+	}
+
+	.header_input_place {
+		margin-left: 250px;
+	}
+
+	.bells_message_place {
+		width: 85px;
+
+		margin-left: 300px;
+	}
+
+	.user_place {
+		margin-left: 25px;
+	}
+
+	.transactions_choose_ammount {
+		margin-left: 200px;
+	}
+
+	.ammount_title_time {
+		margin-left: 200px;
+	}
+
+	.icon_printer {
+		margin-left: 200px;
+	}
+
+	.icon_dotted {
+		margin-left: 70px;
+	}
+
+	.transactions_place_choose {
+		margin-left: 585px;
+	}
+
+	.canvas_place_bar {
+		width: 90%;
+	}
+
+	.canvas_colors {
+		margin-top: 0px;
+	}
+
+	.card_cvv {
+		margin-left: 300px;
+	}
+
+	.canvas_place_bar_transactions {
+		width: 40%;
+
+		margin-left: 50px;
+	}
+
+	.balance_place_squares_item {
+		width: 205px;
+	}
+
+	.canvas_place_bar_place {
+		width: 69%;
+	}
+
+}
+
+@media (max-width: 2000px) {
+
+	.right_side {
+		height: 150vh;
+	}
+
+	.header_input_place {
+		margin-left: 250px;
+	}
+
+	.bells_message_place {
+		width: 85px;
+
+		margin-left: 225px;
+	}
+
+	.user_place {
+		margin-left: 25px;
+	}
+
+	.transactions_choose_ammount {
+		margin-left: 200px;
+	}
+
+	.ammount_title_time {
+		margin-left: 200px;
+	}
+
+	.icon_printer {
+		margin-left: 169px;
+	}
+
+	.icon_dotted {
+		margin-left: 50px;
+	}
+
+	.transactions_place_choose {
+		margin-left: 535px;
+	}
+
+	.canvas_place_bar {
+		width: 95%;
+	}
+
+	.canvas_colors {
+		margin-top: 0px;
+	}
+
+	.card_cvv {
+		margin-left: 300px;
+	}
+
+	.canvas_place_bar_transactions {
+		width: 40;
+
+		margin-top: 0px;
+		margin-left: 50px;
+	}
+
+	.balance_place_squares_item {
+		width: 195px;
+	}
+
+	.canvas_place_bar_place {
+		width: 69%;
+	}
+
+}
+
+@media (max-width: 1900px) {
+
+	.right_side {
+		height: 155vh;
+	}
+
+	.header_input_place {
+		margin-left: 250px;
+	}
+
+	.bells_message_place {
+		width: 85px;
+
+		margin-left: 150px;
+	}
+
+	.user_place {
+		margin-left: 25px;
+	}
+
+	.transactions_choose_ammount {
+		margin-left: 200px;
+	}
+
+	.ammount_title_time {
+		margin-left: 200px;
+	}
+
+	.icon_printer {
+		margin-left: 140px;
+	}
+
+	.icon_dotted {
+		margin-left: 25px;
+	}
+
+	.transactions_place_choose {
+		margin-left: 480px;
+	}
+
+	.canvas_place_bar {
+		width: 95%;
+	}
+
+	.canvas_colors {
+		margin-top: 0px;
+	}
+
+	.card_cvv {
+		margin-left: 250px;
+	}
+
+	.canvas_place_bar_transactions {
+		width: 43%;
+
+		margin-top: 0px;
+		margin-left: 50px;
+	}
+
+	.balance_place_squares_item {
+		width: 185px;
+	}
+
+	.canvas_place_bar_place {
+		width: 69%;
+	}
+
+}
+
+@media (max-width: 1800px) {
+
+	.right_side {
+		height: 161vh;
+	}
+
+	.header_input_place {
+		margin-left: 250px;
+	}
+
+	.bells_message_place {
+		width: 85px;
+
+		margin-left: 75px;
+	}
+
+	.user_place {
+		margin-left: 25px;
+	}
+
+	.transactions_choose_ammount {
+		margin-left: 200px;
+	}
+
+	.ammount_title_time {
+		margin-left: 150px;
+	}
+
+	.icon_printer {
+		margin-left: 135px;
+	}
+
+	.icon_dotted {
+		margin-left: 25px;
+	}
+
+	.transactions_place_choose {
+		margin-left: 425px;
+	}
+
+	.canvas_place_bar {
+		width: 100%;
+	}
+
+	.canvas_colors {
+		margin-top: 5px;
+	}
+
+	.card_cvv {
+		margin-left: 250px;
+	}
+
+	.canvas_place_bar_transactions {
+		width: 46%;
+
+		margin-top: 0px;
+		margin-left: 50px;
+	}
+
+	.balance_place_squares_item {
+		width: 175px;
+	}
+
+	.canvas_place_bar_place {
+		width: 80%;
+	}
+
+}
+
+@media (max-width: 1700px) {
+
+	.right_side {
+		height: 150vh;
+	}
+
+	.header_input_place {
+		margin-left: 150px;
+	}
+
+	.bells_message_place {
+		width: 75px;
+
+		margin-left: 30px;
+	}
+
+	.user_place {
+		margin-left: 15px;
+	}
+
+	.transactions_choose_ammount {
+		margin-left: 150px;
+	}
+
+	.ammount_title_time {
+		margin-left: 140px;
+	}
+
+	.icon_printer {
+		margin-left: 85px;
+	}
+
+	.icon_dotted {
+		margin-left: 25px;
+	}
+
+	.transactions_place_choose {
+		margin-left: 315px;
+	}
+
+	.canvas_place_bar {
+		width: 105%;
+	}
+
+	.canvas_colors {
+		margin-top: 25px;
+	}
+
+	.card_cvv {
+		margin-left: 200px;
+	}
+
+	.canvas_place_bar_transactions {
+		width: 51%;
+
+		margin-top: 0px;
+		margin-left: 35px;
+	}
+
+	.balance_place_squares_item {
+		width: 155px;
+	}
+
+	.canvas_place_bar_place {
+		width: 85%;
+	}
+
+}
+
+@media (max-width: 1560px) {
+
+	.right_side {
+		height: 185vh
+	}
+
+	.bells_message_place {
+		width: 75px;
+
+		margin-left: 27px;
+	}
+
+	.card_cvv {
+		margin-left: 200px;
+	}
+
+}
+
+@media (max-width: 1400px) {
+
+	.right_side {
+		height: 185vh
+	}
+
+	.header_input_place {
+		margin-left: 25px;
+	}
+
+	.bells_message_place {
+		width: 75px;
+
+		margin-left: 15px;
+	}
+
+	.user_place {
+		margin-left: 15px;
+	}
+
+	.transactions_choose_ammount {
+		margin-left: 100px;
+	}
+
+	.ammount_title_time {
+		margin-left: 100px;
+	}
+
+	.icon_printer {
+		margin-left: 70px;
+	}
+
+	.icon_dotted {
+		margin-left: 25px;
+	}
+
+	.transactions_place_choose {
+		margin-left: 210px;
+	}
+
+	.canvas_colors_item {
+		margin: 15px 65px;
+	}
+
+	.card_cvv {
+		margin-left: 150px;
+	}
+
+	.canvas_place_bar_transactions {
+		margin-top: 5px;
+	}
+
+	.canvas_place_bar_place_right_item {
+		margin-left: 10px;
+	}
+
+}
+
+@media (max-width: 1300px) {
+
+	.right_side {
+		height: 185vh
+	}
+
+	.header_input_place {
+		display: none;
+	}
+
+	.bells_message_place {
+		width: 75px;
+
+		margin-left: 380px;
+	}
+
+	.user_place {
+		margin-left: 15px;
+	}
+
+	.transactions_choose_ammount {
+		margin-left: 100px;
+	}
+
+	.ammount_title_time {
+		margin-left: 75px;
+	}
+
+	.icon_printer {
+		margin-left: 50px;
+	}
+
+	.icon_dotted {
+		margin-left: 25px;
+	}
+
+	.transactions_place_choose {
+		margin-left: 160px;
+	}
+
+	.canvas_colors_item {
+		margin: 15px 55px;
+	}
+
+	.card_cvv {
+		margin-left: 150px;
+	}
+
+	.canvas_place_bar_transactions {
+		margin-top: 10px;
+
+		margin-left: 10px;
+	}
+
+	.canvas_place_bar_place_right_item {
+		margin-left: 5px;
+	}
+
+}
+
+@media (max-width: 1200px) {
+
+	.payment_admin {
+		font-size: 13px;
+	}
+
+	.right_side {
+		height: 277vh
+	}
+
+	.header_input_place {
+		display: none;
+	}
+
+	.bells_message_place {
+		width: 75px;
+
+		margin-left: 300px;
+	}
+
+	.user_place {
+		margin-left: 18px;
+	}
+
+	.squares {
+		flex-wrap: wrap;
+	}
+
+	.squares_item {
+		width: 47%;
+
+		margin: 0px 13px;
+		margin-bottom: 25px;
+	}
+
+	.squares_item_yellow {
+		margin-bottom: 0px;
+	}
+
+	.squares_item_red {
+		margin-bottom: 0px;
+	}
+
+	.icon_printer {
+		display: none;
+	}
+
+	.transactions_choose_ammount {
+		margin-left: 100px;
+	}
+
+	.ammount_text {
+		margin-left: 15px;
+	}
+
+	.ammount_title_time {
+		margin-left: 100px;
+	}
+
+	.icon_dotted {
+		margin-left: 33px;
+	}
+
+	.transactions_place_choose {
+		margin-left: 113px;
+	}
+
+	.canvas_place_bar {
+		margin-bottom: 90px;
+	}
+
+	.canvas_colors_item {
+		margin: 15px 45px;
+	}
+
+	.card_transactions_place {
+		width: 49%;
+
+		margin-bottom: 35px;
+	}
+
+	.balance_place {
+		width: 49%;
+
+		margin-left: 18px;
+
+		margin-bottom: 35px;
+	}
+
+	.canvas_place_bar_transactions {
+		width: 45%;
+
+		margin-top: 0px;
+		margin-left: 75px;
+	}
+
+	.balance_place_squares_item {
+		width: 175px;
+	}
+
+	.activity_place {
+		width: 100%;
+	}
+
+	.canvas_place_bar_place {
+		width: 36%;
+	}
+
+	.sections_container_activity_place {
+		width: 90%;
+	}
+
+	.card_cvv {
+		margin-left: 250px;
+	}
+
+}
+
+@media (max-width: 1100px) {
+
+	.right_side {
+		height: 278vh
+	}
+
+	.header_input_place {
+		display: none;
+	}
+
+	.bells_message_place {
+		width: 75px;
+
+		margin-left: 225px;
+	}
+
+	.user_place {
+		margin-left: 15px;
+	}
+
+	.squares_item {
+		width: 46%;
+	}
+
+	.transactions_choose_ammount {
+		margin-left: 100px;
+	}
+
+	.ammount_title_time {
+		margin-left: 50px;
+	}
+
+	.icon_dotted {
+		margin-left: 30px;
+	}
+
+	.transactions_place_choose {
+		margin-left: 60px;
+	}
+
+	.canvas_colors_item {
+		margin: 15px 45px;
+	}
+
+	.card_transactions_place {
+		width: 48%;
+
+		margin-bottom: 35px;
+	}
+
+	.balance_place {
+		width: 48%;
+
+		margin-left: 18px;
+
+		margin-bottom: 35px;
+	}
+
+	.card_cvv {
+		margin-left: 200px;
+	}
+
+	.canvas_place_bar_transactions {
+		width: 50%;
+
+		margin-top: 0px;
+		margin-left: 35px;
+	}
+
+	.balance_place_squares_item {
+		width: 160px;
+	}
+
+	.canvas_place_bar_place_right_item {
+		margin-left: 15px;
+	}
+
+}
+
+@media (max-width: 1000px) {
+
+	.right_side {
+		height: 278vh
+	}
+
+	.payment_admin {
+		margin-top: 25px;
+	}
+
+	.made_by {
+		font-size: 15px;
+
+		margin-top: 0px;
+	}
+
+	.bells_message_place {
+		width: 75px;
+
+		margin-left: 150px;
+	}
+
+	.user_place {
+		margin-left: 15px;
+	}
+
+	.transactions_choose_ammount {
+		margin-left: 85px;
+	}
+
+	.ammount_title_time {
+		margin-left: 63px;
+	}
+
+	.transactions_choose_ammount_square {
+		display: none;
+	}
+
+	.icon_dotted {
+		margin-left: 25px;
+	}
+
+	.transactions_place_choose {
+		margin-left: 72px;
+	}
+
+	.transactions_place_choose_item_three {
+		display: none;
+	}
+
+	.canvas_place_bar {
+		margin-bottom: 75px;
+	}
+
+	.canvas_colors_row {
+		display: block;
+	}
+
+	.canvas_colors_item {
+		margin: 25px 0px;
+	}
+
+	.card_cvv {
+		margin-left: 175px;
+	}
+
+	.canvas_place_bar_transactions {
+		width: 55%;
+
+		margin-top: 0px;
+		margin-left: 25px;
+	}
+
+	.balance_place_squares_item {
+		width: 145px;
+	}
+
+}
+
+@media (max-width: 992px) {
+
+	.icon_logo {
+		margin-left: 5px;
+	}
+
+	.page_choose_item_hide {
+		display: none;
+	}
+
+	.payment_admin {
+		font-size: 13px;
+	}
+
+	.right_side {
+		height: 277vh
+	}
+
+	.header_input_place {
+		display: none;
+	}
+
+	.user_info {
+		display: none;
+	}
+
+	.bells_message_place {
+		width: 80px;
+
+		margin-left: 288px;
+	}
+
+	.user_place {
+		margin-left: 18px;
+	}
+
+	.squares {
+		flex-wrap: wrap;
+	}
+
+	.squares_item {
+		width: 46%;
+
+		margin: 0px 13px;
+		margin-bottom: 25px;
+	}
+
+	.squares_item_yellow {
+		margin-bottom: 0px;
+	}
+
+	.squares_item_red {
+		margin-bottom: 0px;
+	}
+
+	.icon_printer {
+		display: none;
+	}
+
+	.transactions_choose_ammount {
+		margin-left: 100px;
+	}
+
+	.ammount_title_time {
+		display: none;
+	}
+
+	.icon_dotted {
+		margin-left: 100px;
+	}
+
+	.transactions_place_choose {
+		margin-left: 68px;
+	}
+
+	.transactions_place_choose_item_three {
+		display: none;
+	}
+
+	.canvas_place_bar {
+		margin-bottom: 75px;
+	}
+
+	.canvas_colors_row {
+		display: block;
+	}
+
+	.canvas_colors_item {
+		margin: 25px 0px;
+	}
+
+	.card_transactions_place {
+		width: 48%;
+
+		margin-bottom: 35px;
+	}
+
+	.balance_place {
+		width: 48%;
+
+		margin-left: 18px;
+
+		margin-bottom: 35px;
+	}
+
+	.canvas_place_bar_transactions {
+		width: 55%;
+
+		margin-top: 0px;
+		margin-left: 25px;
+	}
+
+	.balance_place_squares_item {
+		width: 145px;
+	}
+
+	.activity_place {
+		width: 100%;
+	}
+
+	.canvas_place_bar_place {
+		width: 44%;
+	}
+
+	.sections_container_activity_place {
+		width: 90%;
+	}
+
+}
+
+@media (max-width: 900px) {
+
+	.right_side {
+		height: 278vh
+	}
+
+	.bells_message_place {
+		width: 75px;
+
+		margin-left: 225px;
+	}
+
+	.user_place {
+		margin-left: 15px;
+	}
+
+	.transactions_choose_ammount {
+		margin-left: 85px;
+		margin-top: -20px;
+	}
+
+	.transactions_choose_ammount_square {
+		display: none;
+	}
+
+	.icon_dotted {
+		margin-left: 100px;
+	}
+
+	.transactions_place_choose {
+		margin-left: 19px;
+	}
+
+	.transactions_place_choose_item_three {
+		display: none;
+	}
+
+	.canvas_place_bar {
+		margin-bottom: 75px;
+	}
+
+	.canvas_colors_row {
+		display: block;
+	}
+
+	.canvas_colors_item {
+		margin: 25px 0px;
+	}
+
+	.card_cvv {
+		margin-left: 150px;
+	}
+
+	.canvas_place_bar_transactions {
+		width: 60%;
+
+		margin-top: 0px;
+		margin-left: 5px;
+	}
+
+	.balance_place_squares_item {
+		width: 135px;
+	}
+
+}
+
+@media (max-width: 768px) {
+
+	.logo_place {
+		margin-top: 15px;
+	}
+
+	.icon_logo {
+		display: none;
+	}
+
+	.page_choose {
+		margin-top: 25px;
+	}
+
+	.page_choose_item {
+		justify-content: center;
+	}
+
+	.page_choose_item_title {
+		display: none;
+	}
+
+	.page_choose_item_hide {
+		display: none;
+	}
+
+	.payment_admin {
+		font-size: 13px;
+	}
+
+	.right_side {
+		height: 346vh
+	}
+
+	.header_input_place {
+		display: none;
+	}
+
+	.user_info {
+		display: none;
+	}
+
+	.bells_message_place {
+		width: 70px;
+
+		margin-left: 132px;
+	}
+
+	.user_place {
+		margin-left: 15px;
+	}
+
+	.squares {
+		flex-wrap: wrap;
+	}
+
+	.squares_item {
+		width: 45%;
+
+		margin: 0px 13px;
+		margin-bottom: 25px;
+	}
+
+	.squares_item_yellow {
+		margin-bottom: 0px;
+	}
+
+	.squares_item_red {
+		margin-bottom: 0px;
+	}
+
+	.transactions_place_title {
+		margin-top: 20px;
+	}
+
+	.icon_printer {
+		display: none;
+	}
+
+	.transactions_choose_ammount {
+		margin-left: 100px;
+	}
+
+	.ammount_title_time {
+		display: none;
+	}
+
+	.icon_dotted {
+		margin-left: 110px;
+	}
+
+	.transactions_place {
+		width: 100%;
+	}
+
+	.transactions_place_footer {
+		margin-top: 30px;
+	}
+
+	.transactions_place_choose {
+		margin-left: 88px;
+	}
+
+	.statistics_place {
+		display: none;
+	}
+
+	.canvas_colors_row {
+		flex-wrap: wrap;
+	}
+
+	.card {
+		width: 225%;
+	}
+
+	.transactions {
+		width: 225%;
+	}
+
+	.card_circule_place {
+		margin-left: 25px;
+	}
+
+	.card_cvv {
+		margin-left: 350px;
+	}
+
+	.balance_place_normal {
+		display: none;
+	}
+
+	.balance_place_media {
+		display: block;
+	}
+
+	.balance_place {
+		width: 100%;
+
+		margin-left: 0px;
+	}
+
+	.canvas_place_bar_transactions {
+		width: 34%;
+
+		margin-top: 0px;
+		margin-left: 25px;
+	}
+
+	.balance_place_squares_item {
+		width: 250px;
+	}
+
+	.activity_place {
+		width: 100%;
+	}
+
+	.canvas_place_bar_place {
+		width: 56%;
+	}
+
+	.sections_container_activity_place {
+		width: 90%;
+	}
+
+}
+
+@media (max-width: 700px) {
+
+	.right_side {
+		height: 347vh
+	}
+
+	.bells_message_place {
+		width: 75px;
+
+		margin-left: 75px;
+	}
+
+	.user_place {
+		margin-left: 15px;
+	}
+
+	.transactions_choose_ammount {
+		margin-left: 100px;
+		margin-top: -20px;
+	}
+
+	.transactions_choose_ammount_square {
+		display: none;
+	}
+
+	.icon_dotted {
+		margin-left: 105px;
+	}
+
+	.transactions_place_choose {
+		margin-left: 40px;
+	}
+
+	.transactions_place_choose_item_three {
+		display: none;
+	}
+
+	.card_cvv {
+		margin-left: 325px;
+	}
+
+	.canvas_place_bar_transactions {
+		width: 38%;
+
+		margin-top: 0px;
+		margin-left: 75px;
+	}
+
+	.balance_place_squares_item {
+		width: 225px;
+	}
+
+}
+
+@media (max-width: 600px) {
+
+	.logo_place {
+		margin-top: 15px;
+		margin-left: -10px;
+
+		font-size: ;
+	}
+
+	.icon_logo {
+		display: none;
+	}
+
+	.logo_title {
+		font-size: 31px;
+	}
+
+	.page_choose {
+		margin-top: 25px;
+	}
+
+	.page_choose_item {
+		justify-content: center;
+	}
+
+	.page_choose_item_title {
+		display: none;
+	}
+
+	.page_choose_item_hide {
+		display: none;
+	}
+
+	.payment_admin {
+		font-size: 13px;
+	}
+
+	.right_side {
+		height: 394vh
+	}
+
+	.header_figure {
+		display: none;
+	}
+
+	.header_input_place {
+		display: none;
+	}
+
+	.user_info {
+		display: none;
+	}
+
+	.right_side_title {
+		margin-left: 10px;
+	}
+
+	.bells_message_place {
+		width: 70px;
+
+		margin-left: 53px;
+	}
+
+	.user_place {
+		margin-left: 5px;
+	}
+
+	.squares {
+		flex-wrap: wrap;
+	}
+
+	.squares_item {
+		width: 95%;
+
+		margin: 0px 13px;
+		margin-bottom: 25px;
+	}
+
+	.squares_item_yellow {
+		margin-bottom: 25px;
+	}
+
+	.squares_item_red {
+		margin-bottom: 0px;
+	}
+
+	.transactions_place_title {
+		margin-top: 20px;
+	}
+
+	.icon_printer {
+		display: none;
+	}
+
+	.transactions_choose_ammount_square {
+		display: none;
+	}
+
+	.transactions_choose_ammount {
+		margin-left: 75px;
+
+		margin-top: -25px;
+	}
+
+	.ammount_title_time {
+		display: none;
+	}
+
+	.icon_dotted {
+		margin-left: 70px;
+	}
+
+	.transactions_place {
+		width: 100%;
+	}
+
+	.transactions_place_footer {
+		margin-top: 30px;
+	}
+
+	.transactions_place_choose {
+		margin-left: 95px;
+	}
+
+	.transactions_place_choose_item_one {
+		display: none;
+	}
+
+	.transactions_place_choose_item_two {
+		display: none;
+	}
+
+	.statistics_place {
+		display: none;
+	}
+
+	.canvas_colors_row {
+		flex-wrap: wrap;
+	}
+
+	.card {
+		width: 225%;
+	}
+
+	.transactions {
+		width: 225%;
+	}
+
+	.card_circule_place {
+		margin-left: 25px;
+	}
+
+	.card_cvv {
+		margin-left: 250px;
+	}
+
+	.balance_place_normal {
+		display: none;
+	}
+
+	.balance_place_media {
+		display: block;
+	}
+
+	.balance_place {
+		width: 100%;
+
+		margin-left: 0px;
+	}
+
+	.canvas_place_bar_transactions {
+		width: 44%;
+
+		margin-top: 0px;
+		margin-left: 35px;
+	}
+
+	.balance_place_squares_item {
+		width: 195px;
+	}
+
+	.activity_place {
+		width: 100%;
+	}
+
+	.canvas_place_bar_place {
+		width: 73%;
+	}
+
+	.sections_container_activity_place {
+		width: 90%;
+	}
+
+}
+
+@media (max-width: 500px) {
+
+	.right_side {
+		height: 386vh
+	}
+
+	.right_side_title {
+		font-size: 38px;
+	}
+
+	.bells_message_place {
+		width: 70px;
+
+		margin-left: 32px;
+	}
+
+	.user_place {
+		margin-left: 0px;
+	}
+
+	.squares_item {
+		width: 94%;
+	}
+
+	.transactions_place {
+		height: 375px;
+	}
+
+	.transactions_choose_item_square {
+		display: none;
+	}
+
+	.transactions_choose_ammount {
+		margin-left: 65px;
+		margin-top: -20px;
+	}
+
+	.transactions_choose_ammount_square {
+		display: none;
+	}
+
+	.icon_dotted {
+		margin-left: 55px;
+	}
+
+	.transactions_place_choose {
+		margin-left: 27px;
+	}
+
+	.transactions_place_choose_item_three {
+		display: none;
+	}
+
+	.card_cvv {
+		margin-left: 200px;
+	}
+
+	.canvas_place_bar_transactions {
+		width: 52%;
+
+		margin-top: 0px;
+		margin-left: 25px;
+	}
+
+	.balance_place_squares_item {
+		width: 160px;
+	}
+
+}
+
+@media (max-width: 400px) {
+
+	.left_side {
+		display: none;
+	}
+
+	.left_side_static {
+		display: none;
+	}
+
+	.right_side {
+		width: 100%;
+
+		height: 386vh
+	}
+
+	.right_side_title {
+		font-size: 38px;
+	}
+
+	.bells_message_place {
+		width: 70px;
+
+		margin-left: 27px;
+	}
+
+	.user_place {
+		margin-left: 5px;
+	}
+
+	.squares_item {
+		width: 94%;
+	}
+
+	.transactions_place {
+		height: 380px;
+	}
+
+	.transactions_choose_item_square {
+		display: none;
+	}
+
+	.transactions_choose_ammount {
+		margin-left: 65px;
+		margin-top: -20px;
+	}
+
+	.transactions_choose_ammount_square {
+		display: none;
+	}
+
+	.icon_dotted {
+		margin-left: 55px;
+	}
+
+	.transactions_place_choose {
+		margin-left: 27px;
+	}
+
+	.transactions_place_choose_item_three {
+		display: none;
+	}
+
+	.card_cvv {
+		margin-left: 200px;
+	}
+
+	.canvas_place_bar_transactions {
+		width: 52%;
+
+		margin-top: 0px;
+		margin-left: 25px;
+	}
+
+	.balance_place_squares_item {
+		width: 160px;
+	}
+
+}
+
+@media (max-width: 320px) {
+
+	.left_side {
+		display: none;
+	}
+
+	.left_side_static {
+		display: none;
+	}
+
+	.right_side {
+		width: 100%;
+		height: 372vh;
+	}
+
+	.right_side_header {
+		margin-top: 0px;
+	}
+
+	.right_side_title {
+		font-size: 38px;
+	}
+
+	.bells_message_place {
+		display: none;
+	}
+
+	.user_place {
+		display: none;
+	}
+
+	.burger_menu {
+		display: block;
+
+		margin-left: 65px;
+	}
+
+	.squares_item {
+		width: 92%;
+	}
+
+	.transactions_place {
+		height: 375px;
+	}
+
+	.transactions_choose_item_square {
+		display: none;
+	}
+
+	.transactions_name_place {
+		margin-left: 0px;
+	}
+
+	.transactions_choose_ammount {
+		margin-left: 25px;
+	}
+
+	.transactions_name {
+		font-size: 13px;
+	}
+
+	.ammount_price {
+		font-size: 13px;
+	}
+
+	.icon_dotted {
+		margin-left: 35px;
+	}
+
+	.transactions_place_choose {
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+
+	.card_cvv {
+		margin-left: 125px;
+	}
+
+	.canvas_place_bar_transactions {
+		width: 60%;
+
+		margin-top: 5px;
+		margin-left: 5px;
+	}
+
+	.balance_place_squares_item {
+		width: 130px;
+	}
+
+	.activity_place {
+		height: 325px;
+	}
+
+	.canvas_place_bar_place {
+		width: 78%;
+	}
+
+	.canvas_place_bar_place_right {
+		margin-top: 35px;
+	}
+
 }
