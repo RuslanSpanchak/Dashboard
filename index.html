@@ -24,6 +24,7 @@
 				<div class="logo_place">
 
 					<img src="./img/Logo.png" class="icon_logo">
+					<div class="logo_title">PELIO</div>
 
 				</div>
 
@@ -69,7 +70,7 @@
 					
 				</div>
 
-				<div class="page_choose_item" id="Transactions">
+				<div class="page_choose_item page_choose_item_hide" id="Transactions">
 					
 					<img src="./img/transaction (1).png" id="icon_transaction_disactive" width="24px" height="24px" class="icon_page_choose">
 					<img src="./img/transaction (2).png" width="25px" height="25px" id="icon_transaction" class="icon_page_choose">
@@ -93,7 +94,7 @@
 				
 				<header class="right_side_header">
 					
-					<img src="./img/window-of-four-rounded-squares.png" width="30px" height="30px">
+					<img src="./img/window-of-four-rounded-squares.png" width="30px" height="30px" class="header_figure">
 
 					<div class="right_side_title">Dashboard</div>
 
@@ -107,20 +108,27 @@
 					<div class="bells_message_place">
 
 						<img src="./img/bell.png" width="30px" height="30px" class="cursor">
-						<img src="./img/envelope.png" width="30px" height="30px" class="cursor">
+						<img src="./img/envelope.png" width="30px" height="30px" class="cursor" id="mail_btn">
 
 					</div>
 
-					<div class="user_place">
+					<div class="user_place" id="register_btn">
 						
-						<img src="./img/Rectangle 14.png">
+						<img src="./img/Rectangle 14.png" class="icon_user">
+						<img src="./img/user.png" class="icon_guest" width="60px" height="60px">
 
 						<div class="user_info">
-							
-							<div class="user_name">Hi Shamim</div>
-							<div class="user_gmail">engshamim@gmail.com</div>
+
+							<div class="user_name"></div>
+							<div class="user_gmail"></div>
 
 						</div>
+
+					</div>
+
+					<div class="burger_menu">
+						
+						<img src="./img/menu.png" width="35px" height="35px" class="cursor">
 
 					</div>
 
@@ -313,7 +321,7 @@
 										<div class="ammount_text">
 												
 											<div class="ammount_title">Amount</div>
-											<div class="ammount_price">$3,43,67,859</div>
+											<div class="ammount_price">$3,43,67</div>
 
 										</div>
 
@@ -654,19 +662,19 @@
 
 									</div>
 
-									<div class="transactions_place_choose_item transactions_place_choose_item_active" id="transactions_choose_1">
+									<div class="transactions_place_choose_item transactions_place_choose_item_one transactions_place_choose_item_active" id="transactions_choose_1">
 										
 										1
 										
 									</div>
 
-									<div class="transactions_place_choose_item" id="transactions_choose_2">
+									<div class="transactions_place_choose_item transactions_place_choose_item_two" id="transactions_choose_2">
 										
 										2
 										
 									</div>
 
-									<div class="transactions_place_choose_item" id="transactions_choose_3">
+									<div class="transactions_place_choose_item transactions_place_choose_item_three" id="transactions_choose_3">
 										
 										3
 										
@@ -854,7 +862,7 @@
 
 					</div>
 
-					<div class="balance_place">
+					<div class="balance_place balance_place_normal">
 					
 						<div class="sections_container">
 							
@@ -907,9 +915,62 @@
 					
 					</div>
 
+					<div class="balance_place balance_place_media">
+					
+						<div class="sections_container_activity_place sections_container">
+							
+							<div class="statistics_place_title">Balance Details</div>
+
+							<div class="sections_text">Total Balance</div>
+							<div class="sections_text_bold">$221,478</div>
+
+							<div class="balance_place_squares">
+								
+								<div class="balance_place_squares_row">
+
+									<div class="balance_place_squares_item balance_place_squares_item_active" id="balance_place_squares_item_1">
+									
+										<div class="sections_text sections_text_square sections_text_square_active" id="sections_text_square_1">Last Month</div>
+										<div class="square_price square_price_active" id="square_price_1">$ 14,849</div>
+
+									</div>
+
+									<div class="balance_place_squares_item"  id="balance_place_squares_item_2">
+									
+										<div class="sections_text sections_text_square" id="sections_text_square_2">Expenses</div>
+										<div class="square_price" id="square_price_2">$ 14,849</div>
+									
+									</div>
+
+								</div>
+
+									<div class="balance_place_squares_row">
+
+									<div class="balance_place_squares_item"  id="balance_place_squares_item_3">
+									
+										<div class="sections_text sections_text_square" id="sections_text_square_3">Taxes</div>
+										<div class="square_price" id="square_price_3">$255.25</div>
+									
+									</div>
+
+									<div class="balance_place_squares_item"  id="balance_place_squares_item_4">
+									
+										<div class="sections_text sections_text_square" id="sections_text_square_4">Debt</div>
+										<div class="square_price" id="square_price_4">$365,478</div>
+									
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+					
+					</div>
+
 					<div class="activity_place">
 					
-						<div class="sections_container">
+						<div class="sections_container_activity_place sections_container">
 							
 							<div class="sections_text">Activity</div>
 							<div class="sections_text_bold">$ 48,284</div>
@@ -947,6 +1008,62 @@
 
 						</div>
 					
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="popup" id="popup_register">
+
+			<div class="popup_body">
+			
+				<div class="popup_container">
+
+					<div class="popup_content">
+					
+						<img src="./img/close.png" class="popup_close" id="close_popup" width="30px" height="30px">
+						<div class="popup_title">Реєстрація</div>
+
+						<div class="register_error_place">
+
+							<div class="register_error">Пароль повинен бути: не більше 10 символів, повинен містити великі</div>
+							<div class="register_error"> та маленькі літери та повинен містити у собі числа</div>
+
+						</div>
+
+						<input type="text" class="register_input" id="user_login" name="" placeholder="Login">
+						<input type="password" class="register_input" id="user_password" name="" placeholder="Password">
+						<div class="register_btn" id="enter_btn">Зареєструватися</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="popup" id="popup_mail">
+
+			<div class="popup_body">
+			
+				<div class="popup_container">
+
+					<div class="popup_content">
+					
+						<img src="./img/close.png" class="popup_close" id="close_popup_mail" width="30px" height="30px">
+						<div class="popup_title">Пошта</div>
+
+						<div class="mail_yext_place">
+
+							<div class="mail_text">Покищо тут нічого немає</div>
+							<img src="./img/empty.png" width="45px" height="45px">
+
+						</div>
+
 					</div>
 
 				</div>
